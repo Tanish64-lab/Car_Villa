@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(https://wallpaperaccess.com/full/155161.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.5); /* Reduced opacity */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+            border: 2px solid #000;
+        }
+        .login-container h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-family: 'Verdana', sans-serif;
+        }
+        .login-container label {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 10px;
+            display: block;
+            text-align: left;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background-color: #333;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="index.html">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="User Name">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Password">
+            <input type="submit" value="Login">
+        </form>
+    </div>
+    
+</body>
+</html>
